@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Gkeep-cool-app/static/css/main.0831b760.css",
-    "main.js": "/Gkeep-cool-app/static/js/main.62fbf3e8.js",
-    "index.html": "/Gkeep-cool-app/index.html",
-    "main.0831b760.css.map": "/Gkeep-cool-app/static/css/main.0831b760.css.map",
-    "main.62fbf3e8.js.map": "/Gkeep-cool-app/static/js/main.62fbf3e8.js.map"
+    "main.css": "/gkeep-cool-app/static/css/main.0831b760.css",
+    "main.js": "/gkeep-cool-app/static/js/main.62fbf3e8.js",
+    "index.html": "/gkeep-cool-app/index.html",
+    "main.0831b760.css.map": "/gkeep-cool-app/static/css/main.0831b760.css.map",
+    "main.62fbf3e8.js.map": "/gkeep-cool-app/static/js/main.62fbf3e8.js.map"
   },
   "entrypoints": [
     "static/css/main.0831b760.css",
