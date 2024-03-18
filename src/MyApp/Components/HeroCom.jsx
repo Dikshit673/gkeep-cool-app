@@ -1,6 +1,6 @@
 // 8. Google Keep Notes App
 import React, { useState } from "react";
-import "./Style.css";
+
 
 const getItemFromLS = () => {
     let list = localStorage.getItem("gKeep")
@@ -13,7 +13,7 @@ const getItemFromLS = () => {
     }
 }
 
-const Web = () => {
+const HeroCom = () => {
     const [obj1, setObj1] = useState(
         {
             id: "",
@@ -155,4 +155,4 @@ const Web = () => {
     );
 };
 
-export default Web;
+export default HeroCom;

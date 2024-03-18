@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from "react-router-dom";
 
 
-const Navbar = () => {
+const NavbarCom = () => {
     const [state, setState] = React.useState(false);
 
     return (
@@ -11,7 +11,7 @@ const Navbar = () => {
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <div className="container">
 
-                        <NavLink className="navbar-brand" to="/gkeep-cool-app"><i className="fa-solid fa-user-tie"></i><div className='letter-P d-inline'>G</div>oogle-Keep-Cool</NavLink>
+                        <NavLink className="navbar-brand" to="/gkeep-cool-app">Cool-Google-Keep</NavLink>
 
                         <button className="navbar-toggler" type="button" title='toggle-button' onClick={() => setState(!state)}>
                             <span className="navbar-toggler-icon"></span>
@@ -61,4 +61,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default NavbarCom;

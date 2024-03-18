@@ -1,13 +1,14 @@
 :root {
-    --font-col-com: #212529;
-    --shad-col-com: #66666e;
-    --tom-col-com: #FC5130;
-    --blu-col-com: #6f5de7;
-    --bg-col-com: #f1f5fd;
-    --wht-col-com: #ffffff;
-    --heading-back-col-com: rgb(252, 191, 24);
-    --font-fam1-com: "acorn", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    --font-fam2-com: cursive;
+    --bg-col: #f1f5fd;
+    --main-col: rgb(252, 191, 24);
+    --tomato-col: #FC5130;
+    --danger-col: red;
+    --sucess-col: rgb(0, 255, 0);
+    --wht-col: #fff;
+    --txt-col: rgba(0, 0, 0, 0.7);
+    --shd-col: rgba(0, 0, 0, 0.25);
+    --font-fam-1: "acorn", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    --font-fam-2: cursive;
 }
 
 /* -----------------------Navbar Component------------------------ */
@@ -15,15 +16,15 @@
 .navbar-section {
     position: sticky;
     top: 0;
-    color: var(--wht-col-com);
-    background-color: var(--heading-back-col-com);
+    color: var(--wht-col);
+    background-color: var(--main-col);
     overflow: hidden;
     z-index: 99;
 }
 
 .navbar-section .navbar-brand {
     color: #fff;
-    font-family: var(--font-fam2-com);
+    font-family: var(--font-fam-2);
     font-size: 1.7rem;
     font-weight: 700;
 }
@@ -40,19 +41,195 @@
         position: fixed;
         top: 66.79px;
         z-index: 990;
-        background-color: var(--bg-col-com);
+        background-color: var(--bg-col);
     }
 
     .navbar-section .nav-item .nav-link {
-        color: var(--heading-back-col-com);
+        color: var(--main-col);
     }
+}
+
+/*---------------------------------Gkeep hero section starts------------------------- */
+
+.main-gkeep-section {
+    overflow: hidden;
+    background-color: var(--bg-col);
+    min-height: 100vh;
+}
+
+/* first div */
+.gkeeep-firstdiv {
+    background-color: rgb(252, 191, 24);
+}
+
+.main-gkeep-section h2 {
+    padding: 1rem 1rem;
+    color: #fff;
+}
+
+/* secoond div */
+
+.gkeep-seconddiv {
+    margin-top: 3rem;
+}
+
+.gkeep-centerdiv {
+    border-radius: 1rem;
+    padding: 0;
+    background-color: var(--wht-col);
+    box-shadow: 0.1rem 0.2rem 0.3rem rgba(0, 0, 0, 0.20);
+}
+
+.gkeep-main-heading {
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--wht-col1);
+    background-color: var(--main-col);
+}
+
+.gkeep-for-padd {
+    padding: 1rem 2rem;
+}
+
+.gkeep-input-title {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--main-col);
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    padding: 0.1rem 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--txt-col);
+    text-transform: capitalize;
+}
+
+.gkeep-input-body {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--main-col);
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    padding: 0.1rem 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--txt-col);
+    text-transform: capitalize;
+    min-height: 10vh;
+}
+
+.gkeep-input-title:focus,
+.gkeep-input-body:focus {
+    border-bottom: 4px solid var(--main-col);
+}
+
+.gkeep-btn-div {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+    margin-bottom: -3rem;
+    padding: 0;
+}
+
+.gkeep-input-btn {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: rgb(252, 191, 24);
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: grid;
+    place-items: center;
+    transform: rotateZ(45deg);
+    margin: 0.5rem;
+    color: var(--wht-col);
+    border: 0.1rem solid var(--bg-col);
+    box-shadow: 0.2rem 0.1rem 0.3rem var(--shd-col);
+}
+
+.gkeep-btn-div .gkeep-input-btn .gkeep-btn-indiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateZ(-45deg);
+}
+
+/* third div */
+
+.gkeep-thirddiv {
+    margin: 3rem 0;
+}
+
+.gkeep-thirddiv .gkeep-centerdiv {
+    padding: 1rem;
+}
+
+.gkeep-thirddiv .gkeep-centerdiv h2 {
+    color: var(--txt-col);
+    text-transform: capitalize;
+    opacity: 0.9;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 5vh;
+    border-bottom: 0.2rem solid var(--main-col);
+}
+
+.gkeep-thirddiv .gkeep-centerdiv p {
+    color: var(--txt-col);
+    text-transform: capitalize;
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 5vh;
+}
+
+.gkeep-thirddiv .gkeep-centerdiv .gkeep-btn-div {
+    margin: 0 !important;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.8rem;
+    margin-bottom: -4rem;
+    padding: 0;
+}
+
+.gkeep-thirddiv .gkeep-centerdiv .gkeep-btn-div .gkeep-input-btn {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    background-color: rgb(252, 191, 24);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: grid;
+    place-items: center;
+    margin: 0.5rem;
+    color: var(--wht-col);
+    /* transform: rotateZ(45deg); */
+    border: 0.1rem solid var(--bg-col);
+    box-shadow: 0.2rem 0.1rem 0.3rem var(--shd-col);
+}
+
+.gkeep-thirddiv .gkeep-centerdiv .gkeep-btn-div .gkeep-input-btn .gkeep-btn-indiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ----------------------------------------contact Component start---------------------------- */
 
 .contact-section {
     min-height: 90vh;
-    background-color: var(--bg-col-com);
+    background-color: var(--bg-col);
 }
 
 .contact-left-div {
@@ -70,7 +247,7 @@
 
 .contact-tagline {
     font-size: 1.3rem;
-    font-family: var(--font-fam2-com);
+    font-family: var(--font-fam-2);
     font-weight: 300;
 }
 
@@ -101,14 +278,14 @@
     background-color: #fff;
     border-radius: 0.4rem;
     cursor: pointer;
-    color: var(--heading-back-col-com);
+    color: var(--main-col);
 }
 
 .contact-icon-div3 {
     width: 100%;
     font-size: 2rem;
     display: flex;
-    color: var(--tom-col-com) !important;
+    color: var(--tomato-col) !important;
     justify-content: space-between;
 }
 
@@ -118,13 +295,13 @@
     display: grid;
     place-items: center;
     border-radius: 50%;
-    background-color: var(--wht-col-com);
+    background-color: var(--wht-col);
 }
 
 .contact-icons-shape a {
     max-width: 40px;
     max-height: 40px;
-    color: var(--heading-back-col-com);
+    color: var(--main-col);
 
 }
 
@@ -133,7 +310,7 @@
 }
 
 .contact-mail {
-    color: var(--heading-back-col-com);
+    color: var(--main-col);
     cursor: pointer;
     font-weight: 600;
 }
@@ -169,12 +346,12 @@
     margin-bottom: 10rem;
     text-transform: capitalize;
     color: #fff;
-    border: 0.1rem solid var(--heading-back-col-com);
-    background-color: var(--heading-back-col-com);
+    border: 0.1rem solid var(--main-col);
+    background-color: var(--main-col);
 }
 
 .contact-submit-btn:hover {
-    border: 0.1rem solid var(--bg-col-com);
+    border: 0.1rem solid var(--bg-col);
 }
 
 @media(max-width:992px) {
@@ -233,8 +410,8 @@ footer {
 }
 
 .para-span {
-    color: var(--heading-back-col-com);
-    font-family: var(--font-fam2-com);
+    color: var(--main-col);
+    font-family: var(--font-fam-2);
     font-weight: 600;
 }
 
@@ -260,7 +437,7 @@ footer {
 }
 
 .footer-icons a {
-    color: var(--heading-back-col-com);
+    color: var(--main-col);
 }
 
 @keyframes rotatefont {
@@ -285,7 +462,7 @@ footer {
 
 .footer-copyright {
     /* font-size: 1.3rem; */
-    /* font-family: var(--font-fam2-com); */
+    /* font-family: var(--font-fam-2); */
     font-weight: 300;
 }
 
@@ -293,12 +470,12 @@ footer {
 
 .error-main-section {
     height: 80vh;
-    background-color: var(--bg-col-com);
+    background-color: var(--bg-col);
     overflow: hidden;
 }
 
 .error-centerdiv {
-    background-color: var(--wht-col-com);
+    background-color: var(--wht-col);
     border-radius: 1rem;
 }
 
@@ -308,7 +485,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: var(--font-fam1-com);
+    font-family: var(--font-fam-1);
     font-weight: 500;
 }
 
@@ -318,7 +495,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: var(--font-fam1-com);
+    font-family: var(--font-fam-1);
     font-weight: 700;
 
 }
@@ -329,7 +506,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: var(--font-fam2-com);
+    font-family: var(--font-fam-2);
     font-weight: 400;
 
 }
@@ -341,11 +518,11 @@ footer {
     margin-bottom: 2rem;
     text-transform: capitalize;
     color: #fff;
-    border: 0.1rem solid var(--heading-back-col-com);
-    background-color: var(--heading-back-col-com);
+    border: 0.1rem solid var(--main-col);
+    background-color: var(--main-col);
     border-radius: 4rem;
 }
 
 .error-go-home-btn:hover {
-    border: 0.1rem solid var(--bg-col-com);
+    border: 0.1rem solid var(--bg-col);
 }
